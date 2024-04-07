@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "DPWH Auto-Fill Extension",
+  "version": "1.0",
+  "permissions": ["tabs", "activeTab"],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "DPWH Auto-Fill Extension"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.dpwh.gov.ph/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
