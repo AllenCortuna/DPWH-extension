@@ -8,21 +8,17 @@ function getID(filePath) {
 }
 
 // Define the data to fill for each URL
-const autoFillData = {
-  "https://www.dpwh.gov.ph/dpwh/business/procurement/civil_works/form/advertisement":
-    {
-      category: "Construction Project",
-      region: "321",
-      office: "428",
-    },
+const data = {
+  category: "Construction Project",
+  region: "321",
+  office: "428",
 };
 
 // Get the current URL
 const currentURL = window.location.href;
 
 // Check if the current URL matches a defined URL
-const data = autoFillData[currentURL];
-if (data) {
+if (currentURL.includes("https://www.dpwh.gov.ph/dpwh/business/procurement/civil_works/form")) {
   const categoryInput = document.querySelector("#edit-submitted-category");
   if (categoryInput) {
     categoryInput.value = data.category;
