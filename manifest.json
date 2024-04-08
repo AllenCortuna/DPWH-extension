@@ -2,6 +2,11 @@
   "manifest_version": 3,
   "name": "DPWH Auto-Fill Extension",
   "version": "1.0",
+  "icons": {
+    "16": "DPWH Logo.png",  
+    "48": "DPWH Logo.png",  
+    "128": "DPWH Logo.png" 
+  },
   "permissions": ["tabs", "activeTab"],
   "action": {
     "default_popup": "index.html",
