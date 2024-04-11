@@ -2,8 +2,7 @@ function getDescription(filePath) {
   return filePath.replace(/^.*\\/, "").replace(/\.[^.]+$/, ""); // Remove "C:\fakepath\" and file extension
 }
 function getID(filePath) {
-  //TODO: fix this
-  const idRegex = /\\(\w+)\s/;
+  const idRegex = /C:\\fakepath\\([\w]{1,8})(?:-R1)?\s/;
   const match = idRegex.exec(filePath);
   return match ? match[1] : null;
 }
