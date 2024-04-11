@@ -2,9 +2,10 @@ function getDescription(filePath) {
   return filePath.replace(/^.*\\/, "").replace(/\.[^.]+$/, ""); // Remove "C:\fakepath\" and file extension
 }
 function getID(filePath) {
+  //TODO: fix this
   const idRegex = /\\(\w+)\s/;
   const match = idRegex.exec(filePath);
-  return match ? match[1] : "24EB0";
+  return match ? match[1] : null;
 }
 
 // Define the data to fill for each URL
