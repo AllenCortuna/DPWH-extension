@@ -39,7 +39,7 @@ const data = {
 const currentURL = window.location.href;
 
 // CIVIL WORKS
-if (currentURL.includes("civil") || currentURL.includes("https://www.dpwh.gov.ph/dpwh/business/procurement/civil_works/form")) {
+if (currentURL.includes("civil")) {
   const categoryInput = document.querySelector("#edit-submitted-category");
   if (categoryInput) {
     categoryInput.value = data.category;
@@ -74,7 +74,7 @@ if (currentURL.includes("civil") || currentURL.includes("https://www.dpwh.gov.ph
 }
 
 // GOODS
-if (currentURL.includes("good") || currentURL.includes("https://www.dpwh.gov.ph/dpwh/business/procurement/goods_services/form")) {
+if (currentURL.includes("good")) {
   const categoryInput = document.querySelector("#edit-submitted-category");
   if (categoryInput) {
     categoryInput.value = data.goodsCategory;
